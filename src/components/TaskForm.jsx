@@ -8,7 +8,7 @@ function TaskForm() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!taskText.trim()) return;
+        if (!taskText.trim()) return alert("This filed cannot be empty.");
 
         dispatch({
             type: "ADD_TASK",
